@@ -1,0 +1,144 @@
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: transform 0.5s linear;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(120 120 237);
+    border-bottom: 1px solid white;
+}
+
+header h1 {
+    color: white;
+    padding-left: 100px;
+}
+
+#menu {
+    padding-right: 40px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav ul {
+    width: 40vw;
+    padding-right: 100px;
+}
+.nav ul, .navResponsive ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul li,.navResponsive ul li{
+    list-style: none;
+}
+.nav ul li a,.navResponsive ul li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navResponsive {
+    margin: auto;
+    width: 80vw;
+}
+
+.headResponsive {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(120 120 237);
+}
+
+.translateTransform {
+    transform: translateY(-150px);
+}
+
+main {
+    width: 80vw;
+    margin: 100px auto;
+}
+.homeDescrip {
+    text-align: center;
+}
+
+main p {
+    margin: 40px 0;
+    font-size: 22px;
+}
+#techsHeading {
+    margin: 30px 0;
+}
+.content {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content div {
+    box-shadow: 1px 4px 14px 0px black;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    width: 30vw;
+    padding: 30px;
+}
+
+.content div a {
+    text-decoration: none;
+}
+
+footer {
+    height: 60px;
+    background-color: rgb(120 120 237);
+    color: white;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px){
+    #menu {
+        display: block;
+    }
+    header h1 {
+        padding-left: 30px;
+    }
+    .nav {
+        display: none;
+    }
+   .content div {
+        width: 80vw;
+   } 
+}
+@media screen and (max-width: 300px){
+    header h1 {
+        font-size: 20px;
+    }
+    .navResponsive ul li {
+        font-size: 14px;
+    }
+    .content div h1,#techsHeading {
+        font-size: 20px;
+    }
+    
+    .content div p, .content div a, main p {
+        font-size: 14px;
+    }
+}
