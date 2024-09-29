@@ -7,7 +7,7 @@ header,
 footer {
  width: 100%;
  height: 120px;
- background-color: #138D75 ;
+ background-color: #184bd9 ;
  color: white;
 }
 
@@ -36,6 +36,6 @@ p {
 .card {
     width: 80%;
     margin: 40px auto;
-    border: 5px solid #138D75;
-    box-shadow: 5px 10px #ABEBC6;
+    border: 5px solid #0959c1;
+    box-shadow: 5px 10px #a5a7a6;
   }
